@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cklyncdream</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Giriş ekranı -->
+  <section id="giris" class="screen">
+    <h1 class="logo">cklyncdream</h1>
+    <button onclick="goToSection('hakkimda')">Giriş</button>
+  </section>
+
+  <!-- Hakkımda -->
+  <section id="hakkimda" class="screen hidden">
+    <h2>Hakkımda</h2>
+    <p>Ben cklyncdream. Kod, oyun ve projelerle uğraşırım.</p>
+    <button onclick="goToSection('icraat')">Devam</button>
+  </section>
+
+  <!-- İcraatlar -->
+  <section id="icraat" class="screen hidden">
+    <h2>İcraatlarım</h2>
+    <ul>
+      <li>🚀 Yazılım projeleri</li>
+      <li>🎮 Oyun geliştirme</li>
+      <li>🌐 Web siteleri</li>
+    </ul>
+    <button onclick="goToSection('oyunlar')">Oyunlarım</button>
+  </section>
+
+  <!-- Oyunlar -->
+  <section id="oyunlar" class="screen hidden">
+    <h2>Oyunlarım</h2>
+    <p>Oyunlarımı görmek için aşağıdaki linklere tıkla:</p>
+    <a href="https://example.com/oyun1" target="_blank">🎮 Oyun 1</a><br>
+    <a href="https://example.com/oyun2" target="_blank">🎮 Oyun 2</a>
+    <br><br>
+    <button onclick="goToSection('siteler')">Sitelerim</button>
+  </section>
+
+  <!-- Siteler -->
+  <section id="siteler" class="screen hidden">
+    <h2>Diğer Sitelerim</h2>
+    <a href="https://github.com/cklyncdream" target="_blank">GitHub</a><br>
+    <a href="https://example.com" target="_blank">Web Sitem</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
